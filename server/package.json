@@ -1,0 +1,17 @@
+{
+  "name": "react-apollo-graphql-experiment",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/umxr/react-apollo-graphql-experiment.git",
+  "author": "Umar Gora <umarg1997@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server/server.js"
+  },
+  "devDependencies": {
+    "apollo-server-express": "^2.9.16",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
