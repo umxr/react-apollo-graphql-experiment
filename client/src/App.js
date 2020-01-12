@@ -39,9 +39,13 @@ function App() {
     createTodo({
       variables: {
         text
-      }
-    }).then(data => {
-      console.log(data);
+      },
+      refetchQueries: [
+        {
+          query: READ_TODOS
+        }
+      ]
+    }).then(() => {
       setText("");
     });
   };
@@ -50,7 +54,12 @@ function App() {
     removeTodo({
       variables: {
         id
-      }
+      },
+      refetchQueries: [
+        {
+          query: READ_TODOS
+        }
+      ]
     });
   };
 
